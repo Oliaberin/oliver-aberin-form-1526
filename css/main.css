@@ -1,0 +1,186 @@
+/*Mobile Version 25rem*/
+/*form assignment text*/
+h1 {
+    position: relative;
+    background-color: #ffffff;
+    border: 0.5px solid #ececec;
+    width: 275px;
+    padding: 10px;
+    top: 40px;
+    left: 25px;
+    font-size: 2rem;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #ffffff;
+    padding: 40px;
+
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    max-width: 25rem;
+    background-color: #f2f2f2;
+    border-radius: 5px;
+    padding: 20px;
+    padding-top: 20px;
+    border: 0.5px solid rgba(35, 35, 35, 0.1);
+    font-size: 1rem;
+    padding-right: 20px;
+}
+
+.fullname {
+    padding-top: 40px;
+}
+
+
+h2 {
+    text-align: center;
+    color: #333;
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    font-size: 16px;
+    margin-bottom: 10px;
+}
+
+input[type="button"] {
+    background-color: #0040ff;
+    color: white;
+    padding: 12px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+input[type="button"]:hover {
+    background-color: #0040ff;
+    
+}
+/* width of submit button*/
+input[type="button"]{
+    width: 100%;
+   }
+
+/*Tablet Version*/
+@media only screen and (min-width:40rem){
+
+    h1 {
+        background-color: #ffffff;
+        border:0.5px solid #ececec;
+        font-size:2rem;
+        width: 17rem;
+        padding: 10px;
+        top: 40px;
+        left: 30px;
+        
+    }
+
+    .email {
+        grid-area: email;
+        padding-top: 40px;
+        
+    }
+
+    .fullname {
+        grid-area: name;
+      
+    }
+
+    .message {
+        grid-area: message;
+    }
+
+    /* width of submit button*/
+    input[type="button"]{
+    width:50%;
+   }
+
+    .container {
+        margin: 0 auto;
+        max-width: 40rem;
+        background-color: #f2f2f2;
+        border-radius: 5px;
+        padding-top: 20px;
+        border: 0.5px solid rgba(35, 35, 35, 0.1);
+        
+    }
+
+    form {
+        display: grid;
+        grid-template-areas: "name email""message message";
+
+    }
+    input[type="text"],
+    input[type="email"],
+    textarea {
+    width: calc(100% - 20px);
+    margin-bottom: 10px;
+}
+
+} 
+
+/*Desktop version*/
+@media only screen and (min-width:50rem) {
+    
+
+    /* form assignment heading */
+    h1 {
+        background-color: #ffffff;
+        border: 0.5px solid #ececec;
+        width: 275px;
+        padding: 10px;
+        top: 40px;
+        left: 200px;
+        font-size: 2rem;
+    }
+        .email {
+            grid-area: email;
+            padding-top: 40px;
+        }
+    
+        .fullname {
+            grid-area: name;
+        }
+    
+        .message {
+            grid-area: message;
+        }
+    /* width of submit button*/
+        input[type="button"]{
+        width: 30%;
+       }
+        
+        .container {
+            margin: 0 auto;
+            max-width: 65rem;
+            background-color: #f2f2f2;
+            border-radius: 5px;
+            padding-top: 20px;
+            border: 0.5px solid rgba(35, 35, 35, 0.1); 
+        }
+    
+        form {
+    
+            display: grid;
+            grid-template-areas: "name email""message message";
+    
+        }
+
+    input[type="text"],
+    input[type="email"],
+    textarea {
+        width: calc(100% - 20px);
+        margin-bottom: 10px;
+    }
+}
