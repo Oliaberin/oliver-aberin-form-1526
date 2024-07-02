@@ -4,7 +4,7 @@
        let emailInput = document.getElementById('email');
        let messageTextarea = document.getElementById('message');
 
-       let emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+       let emailValidation = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
 
        function validateForm() {
            let data = {};
@@ -17,7 +17,7 @@
            }
 
            if (emailInput.value.trim() !== '') {
-               if (emailRegex.test(emailInput.value.trim())) {
+               if (emailValidation.test(emailInput.value.trim())) {
                    data.email = emailInput.value.trim();
                } else {
                    errors.push("Email is not valid.");
