@@ -1,4 +1,4 @@
-       // JavaScript validation code here
+
        let submitButton = document.getElementById('submit-button');
        let fullnameInput = document.getElementById('fullname');
        let emailInput = document.getElementById('email');
